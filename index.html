@@ -2,16 +2,37 @@
 <html>
 
   <head>
-    <title>Mathematic Operations</title>
+    <title>Mathematical Operations</title>
     <script>
-      function addNumbers()
-      {
+      function addNumbers() {
         var fnumber = parseInt(document.getElementById("fnumber").value);
         var lnumber = parseInt(document.getElementById("lnumber").value);
 
         alert(fnumber + lnumber);
       }
+
+      function subnumbers() {
+        var fnumber = parseInt(document.getElementById("fnumber").value);
+        var lnumber = parseInt(document.getElementById("lnumber").value);
+
+        alert(fnumber - lnumber);
+      }
+
+      function mullnumbers() {
+        var fnumber = parseInt(document.getElementById("fnumber").value);
+        var lnumber = parseInt(document.getElementById("lnumber").value);
+
+        alert(fnumber * lnumber);
+      }
+
+      function divnumbers() {
+        var fnumber = parseInt(document.getElementById("fnumber").value);
+        var lnumber = parseInt(document.getElementById("lnumber").value);
+
+        alert(fnumber / lnumber);
+      }
     </script>
+
   </head>
 
   <body>
@@ -22,7 +43,10 @@
       <input type="number" id="fnumber" name="fnumber"> <br><br>
       <label for="lname">last number</label>
       <input type="number" id="lnumber" name="lnumber"><br> <br>
-      <button onclick="addNumbers()">Add</button>
+      <button style="background-color:black;color:white;width:150px; height:40px;" switch color onclick="addNumbers()">Add</button><br> <br>
+      <button style="background-color:blue;color:white;width:150px; height:40px;" onclick="subnumbers()">Subtract</button><br> <br>
+      <button style="background-color:red;color:white;width:150px; height:40px;" onclick="mullnumbers()">Multiply</button><br> <br>
+      <button style="background-color:green;color:white;width:150px; height:40px;" onclick="divnumbers()">Divide</button><br> <br>
 
     </form>
 
