@@ -15,6 +15,11 @@
         s.innerText = firstNumber + lastnumber;
       }
 
+      function clearresult() {
+        var s = document.getElementById("result");
+        s.innerText = " ";
+      }
+
       function subnumbers() {
         var fnumber = parseInt(document.getElementById("fnumber").value);
         var lnumber = parseInt(document.getElementById("lnumber").value);
@@ -47,19 +52,15 @@
     <h1>Mathematic Operations</h1>
 
     <label for="fname">first number</label>
-    <input type="number" id="fnumber" name="fnumber"> <br><br>
+    <input onchange="clearresult()" type="number" id="fnumber" name="fnumber"> <br><br>
     <label for="lname">last number</label>
-    <input type="number" id="lnumber" name="lnumber"><br> <br>
+    <input onchange="clearresult()" id="lnumber" name="lnumber"><br> <br>
     <h2> The Result is: <span style="color:green;font-weight:bold" id="result"></span></h2>
 
     <button style="background-color:gray;color:white;width:150px; height:40px;" onclick="addNumbers()">Add</button><br> <br>
     <button style="background-color:gray;color:white;width:150px; height:40px;" onclick="subnumbers()">Subtract</button><br> <br>
     <button style="background-color:gray;color:white;width:150px; height:40px;" onclick="mullnumbers()">Multiply</button><br> <br>
     <button style="background-color:gray;color:white;width:150px; height:40px;" onclick="divnumbers()">Divide</button><br> <br>
-
-
-
-
   </body>
 
 </html>
