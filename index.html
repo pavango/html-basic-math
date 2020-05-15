@@ -5,11 +5,14 @@
     <title>Mathematical Operations</title>
     <script>
       function addNumbers() {
-        var fnumber = parseInt(document.getElementById("fnumber").value);
-        var lnumber = parseInt(document.getElementById("lnumber").value);
+        var firstNumberElement = document.getElementById("fnumber");
+        var lastNumberElement = document.getElementById("lnumber");
 
-        var s = document.getElementById("id1");
-        s.innerText = fnumber + lnumber;
+        var firstNumber = parseInt(firstNumberElement.value);
+        var lastnumber = parseInt(lastNumberElement.value);
+
+        var s = document.getElementById("result");
+        s.innerText = firstNumber + lastnumber;
       }
 
       function subnumbers() {
@@ -47,11 +50,12 @@
     <input type="number" id="fnumber" name="fnumber"> <br><br>
     <label for="lname">last number</label>
     <input type="number" id="lnumber" name="lnumber"><br> <br>
-    <h3 id="id1"></h3>
-    <button style="background-color:black;color:white;width:150px; height:40px;" onclick="addNumbers()">Add</button><br> <br>
-    <button style="background-color:blue;color:white;width:150px; height:40px;" onclick="subnumbers()">Subtract</button><br> <br>
-    <button style="background-color:red;color:white;width:150px; height:40px;" onclick="mullnumbers()">Multiply</button><br> <br>
-    <button style="background-color:green;color:white;width:150px; height:40px;" onclick="divnumbers()">Divide</button><br> <br>
+    <h2> The Result is: <span style="color:green;font-weight:bold" id="result"></span></h2>
+
+    <button style="background-color:gray;color:white;width:150px; height:40px;" onclick="addNumbers()">Add</button><br> <br>
+    <button style="background-color:gray;color:white;width:150px; height:40px;" onclick="subnumbers()">Subtract</button><br> <br>
+    <button style="background-color:gray;color:white;width:150px; height:40px;" onclick="mullnumbers()">Multiply</button><br> <br>
+    <button style="background-color:gray;color:white;width:150px; height:40px;" onclick="divnumbers()">Divide</button><br> <br>
 
 
 
