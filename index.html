@@ -8,28 +8,32 @@
         var fnumber = parseInt(document.getElementById("fnumber").value);
         var lnumber = parseInt(document.getElementById("lnumber").value);
 
-        alert(fnumber + lnumber);
+        var s = document.getElementById("id1");
+        s.innerText = fnumber + lnumber;
       }
 
       function subnumbers() {
         var fnumber = parseInt(document.getElementById("fnumber").value);
         var lnumber = parseInt(document.getElementById("lnumber").value);
 
-        alert(fnumber - lnumber);
+        var s = document.getElementById("id1");
+        s.innerText = fnumber - lnumber;
       }
 
       function mullnumbers() {
         var fnumber = parseInt(document.getElementById("fnumber").value);
         var lnumber = parseInt(document.getElementById("lnumber").value);
 
-        alert(fnumber * lnumber);
+        var s = document.getElementById("id1");
+        s.innerText = fnumber * lnumber;
       }
 
       function divnumbers() {
         var fnumber = parseInt(document.getElementById("fnumber").value);
         var lnumber = parseInt(document.getElementById("lnumber").value);
 
-        alert(fnumber / lnumber);
+        var s = document.getElementById("id1");
+        s.innerText = fnumber / lnumber;
       }
     </script>
 
@@ -38,17 +42,18 @@
   <body>
 
     <h1>Mathematic Operations</h1>
-    <form>
-      <label for="fname">first number</label>
-      <input type="number" id="fnumber" name="fnumber"> <br><br>
-      <label for="lname">last number</label>
-      <input type="number" id="lnumber" name="lnumber"><br> <br>
-      <button style="background-color:black;color:white;width:150px; height:40px;" switch color onclick="addNumbers()">Add</button><br> <br>
-      <button style="background-color:blue;color:white;width:150px; height:40px;" onclick="subnumbers()">Subtract</button><br> <br>
-      <button style="background-color:red;color:white;width:150px; height:40px;" onclick="mullnumbers()">Multiply</button><br> <br>
-      <button style="background-color:green;color:white;width:150px; height:40px;" onclick="divnumbers()">Divide</button><br> <br>
 
-    </form>
+    <label for="fname">first number</label>
+    <input type="number" id="fnumber" name="fnumber"> <br><br>
+    <label for="lname">last number</label>
+    <input type="number" id="lnumber" name="lnumber"><br> <br>
+    <h3 id="id1"></h3>
+    <button style="background-color:black;color:white;width:150px; height:40px;" onclick="addNumbers()">Add</button><br> <br>
+    <button style="background-color:blue;color:white;width:150px; height:40px;" onclick="subnumbers()">Subtract</button><br> <br>
+    <button style="background-color:red;color:white;width:150px; height:40px;" onclick="mullnumbers()">Multiply</button><br> <br>
+    <button style="background-color:green;color:white;width:150px; height:40px;" onclick="divnumbers()">Divide</button><br> <br>
+
+
 
 
   </body>
