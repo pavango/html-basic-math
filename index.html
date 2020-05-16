@@ -21,27 +21,36 @@
       }
 
       function subnumbers() {
-        var fnumber = parseInt(document.getElementById("fnumber").value);
-        var lnumber = parseInt(document.getElementById("lnumber").value);
+        var firstNumberElement = document.getElementById("fnumber");
+        var lastNumberElement = document.getElementById("lnumber");
 
-        var s = document.getElementById("id1");
-        s.innerText = fnumber - lnumber;
+        var firstNumber = parseInt(firstNumberElement.value);
+        var lastnumber = parseInt(lastNumberElement.value);
+
+        var s = document.getElementById("result");
+        s.innerText = firstNumber - lastnumber;
       }
 
       function mullnumbers() {
-        var fnumber = parseInt(document.getElementById("fnumber").value);
-        var lnumber = parseInt(document.getElementById("lnumber").value);
+        var firstNumberElement = document.getElementById("fnumber");
+        var lastNumberElement = document.getElementById("lnumber");
 
-        var s = document.getElementById("id1");
-        s.innerText = fnumber * lnumber;
+        var firstNumber = parseInt(firstNumberElement.value);
+        var lastnumber = parseInt(lastNumberElement.value);
+
+        var s = document.getElementById("result");
+        s.innerText = firstNumber * lastnumber;
       }
 
       function divnumbers() {
-        var fnumber = parseInt(document.getElementById("fnumber").value);
-        var lnumber = parseInt(document.getElementById("lnumber").value);
+        var firstNumberElement = document.getElementById("fnumber");
+        var lastNumberElement = document.getElementById("lnumber");
 
-        var s = document.getElementById("id1");
-        s.innerText = fnumber / lnumber;
+        var firstNumber = parseInt(firstNumberElement.value);
+        var lastnumber = parseInt(lastNumberElement.value);
+
+        var s = document.getElementById("result");
+        s.innerText = firstNumber / lastnumber;
       }
     </script>
 
