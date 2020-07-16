@@ -1,5 +1,5 @@
 # html-basic-math
-Simple html to perform basic mathematic operation
+Simple html to perform basic mathematic operation.
 
 > I've created this project to learn basic html and javascript.
 
